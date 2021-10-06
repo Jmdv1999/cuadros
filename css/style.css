@@ -1,0 +1,581 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Seccion "Hero"*/
+.hero{
+    height: 100vh;
+    background: url(../images/desktop/image-header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.hero header{
+    width: 100%;
+}
+.hero header .menu{
+    width: 100%;
+    height: 70px;
+    padding: .5em 1em;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+.hero header .menu .icon-menu{
+    text-decoration: none;
+    color:#fff;
+    font-size: 30px;
+    display: none;
+}
+.hero header .menu .contenedor-menu ul{
+    list-style: none;
+}
+.hero header .menu .contenedor-menu ul li{
+    display: inline-block;
+}
+.hero header .menu .contenedor-menu ul li a{
+    padding: 15px;
+    border-radius: 25px;
+    text-decoration: none;
+    color:#fff;
+    font-size: 18px;
+    transition: all .3s;
+}
+.hero header .menu .contenedor-menu ul li a:hover{
+    background: rgb(141, 194, 252);
+    text-transform: uppercase;
+}
+.hero section{
+    display: flex;
+    flex-direction: column;
+}
+.hero section h1{
+    font-size: 3em;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-align: center;
+    color:#fff;
+    font-weight: 900;
+}
+.hero section span{
+    text-align: center;
+}
+/*Sección de servicios*/
+.servicios{
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+}
+.card{
+    width: 50%;
+    padding: 30px;
+    height: 450px;
+}
+.card h3{
+    font-size: 3.8em;
+    font-weight: 700;
+}
+.card p{
+    padding:50px 0;
+    font-size: 18px;
+    width: 80%;
+}
+.card a{
+    font-size: 18px;
+    color:#000;
+    text-decoration: none;
+    font-weight: 600;
+}
+.card span{
+    padding: 0 10px;
+    transition: all .3s;
+}
+.card:nth-child(1) span:hover{
+    border-radius: 5px;
+    border-bottom: solid 6px hsl(51, 100%, 49%);
+}
+.card:nth-child(4) span:hover{
+    border-radius: 5px;
+    border-bottom: solid 6px hsl(7, 99%, 70%);
+}
+.card-img{
+    width: 50%;
+    height: 450px;
+}
+.card-img img{
+    width: 100%;
+    height: 100%;
+}
+/*Sección de productos*/
+.productos{
+    display: flex;
+    min-height: 70vh;
+}
+.producto{
+    height: 450px;
+    width: 50%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: flex-end;
+    align-items: center;
+}
+.producto h4{
+    font-size: 2em;
+}
+.producto p{
+    font-size: 18px;
+    text-align: center;
+    width: 70%;
+}
+.producto:nth-child(1){
+    color:hsl(167, 40%, 24%);
+    background-image: url(../images/desktop/image-graphic-design.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.producto:nth-child(2){
+    color: hsl(198, 62%, 26%);
+    background-image: url(../images/desktop/image-photography.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/*Sección de Clientes*/
+.testimonios{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding:20px;
+}
+.testimonios h2{
+    text-align: center;
+    width: 100%;
+    font-size: 2.5em;
+    margin-bottom: 50px;
+}
+.testimonio{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-between;
+    height: 400px;
+}
+.testimonio img{
+    border-radius: 50%;
+}
+.testimonio p{
+    font-size: 22px;
+    width: 100%;
+    text-align: center;
+    line-height: 30px;
+}
+.testimonio span{
+    text-align: center;
+    line-height: 30px;
+    font-size: 1em;
+}
+/*Sección de galeria*/
+.galeria{
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+}
+.galeria .contenedor-imagen{
+    width: 25%;
+    height: 100%;
+}
+.galeria .contenedor-imagen img{
+    width: 100%;
+    height: 100%;
+}
+/*pie de pagina*/
+.footer{
+    padding:50px;
+    background:hsl(168, 34%, 41%) ;
+    height: 50vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: hsl(167, 40%, 24%);
+}
+.footer .secciones{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 30%;
+}
+.footer .social{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 20%;
+}
+.footer .secciones span, .footer .social span{
+    width: 20%;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.footer .secciones span:hover, .footer .social:hover{
+    color:#fff;
+    cursor: pointer;
+}
+@media screen and (max-width:700px) {
+    .hero header .menu .contenedor-logo{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+    }
+    .hero header{
+        height: 70px;
+    }
+    .hero header .menu{
+        padding: 0px;
+    }
+    .hero header .menu .icon-menu{
+        text-decoration: none;
+        color:#fff;
+        font-size: 30px;
+        display: block;
+        padding: 15px;
+    }
+    .contenedor-menu{
+        position: absolute;
+        background: rgba(141, 194, 252,0.9);
+        height: 100vh;
+        width: 100%;
+        top: 70px;
+        left:-100%;
+        z-index: 1000;
+        padding: 50px;
+        transition:.3s;
+    }
+    .hero header .menu .contenedor-menu ul li{
+        display: block;
+    }
+    .hero header .menu .contenedor-menu ul li a{
+        display: block;
+        height: 50px;
+        padding: 15px;
+        text-align: center;
+        margin: 0;
+        border-radius: 0px;;
+    }
+    .hero header .menu .contenedor-menu ul li a:hover{
+        background: hsl(168, 34%, 41%);
+        text-transform: uppercase;
+    }
+
+    /*Sección de servicios*/
+    .card h3{
+        font-size: 2.2em;
+        font-weight: 700;
+    }
+    .card p{
+        font-size: 18px;
+    }
+    .card a{
+        font-size: 20px;
+        color:#000;
+        font-weight: 600px;
+        text-decoration: none;
+    }
+    .card span{
+        padding: 0 10px;
+        transition: all .3s;
+    }
+    /*Sección de productos*/
+    .producto{
+        padding: 50px 20px 10px;
+    }
+    .producto h4{
+        font-size: 2em;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .producto p{
+        font-size: 20px;
+        text-align: center;
+        width: 100%;
+    }
+    /*Sección de Clientes*/
+    .testimonios{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding:20px;
+    }
+    .testimonio{
+        padding: 20px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:space-between;
+        height: 450px;
+        margin-bottom: 50px;
+    }
+    .testimonio p{
+        font-size: 25px;
+        width: 100%;
+        text-align: center;
+    }
+    .testimonio span{
+        font-size: 20px;
+        text-align: center;
+    }
+    /*Sección de galeria*/
+    .galeria{
+        height: 140vh;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .galeria .contenedor-imagen{
+        width: 50%;
+        height: 50%;
+    }
+    .galeria .contenedor-imagen img{
+        width: 100%;
+        height: 100%;
+    }/*Pie de pagina*/
+    .footer{
+        height: 100%;
+        padding: 10px;
+    }
+    .footer h1{
+        font-size: 2.5em;
+    }
+    .footer .secciones{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 70%;
+        color: hsl(167, 40%, 24%);
+    }
+    .footer .social{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 40%;
+        color: hsl(167, 40%, 24%);
+    }
+}
+@media screen and (max-width:500px) {
+    /*Sección de servicios*/
+    .card h3{
+        font-size: 1.5em;
+        font-weight: 700;
+    }
+    .card p{
+        font-size: 15px;
+    }
+    .card a{
+        font-size: 18px;
+        color:#000;
+        font-weight: 600px;
+        text-decoration: none;
+    }
+    /*Sección de productos*/
+    .producto h4{
+        font-size: 1.5em;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .producto p{
+        font-size: 14px;
+        text-align: center;
+        width: 100%;
+    }
+    /*Sección de Clientes*/
+    .testimonio{
+        padding: 20px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:space-between;
+        height: 450px;
+        margin-bottom: 50px;
+    }
+    .testimonio p{
+        font-size: 25px;
+        width: 100%;
+        text-align: center;
+    }
+    .testimonio span{
+        font-size: 20px;
+        text-align: center;
+    }
+    /*Pie de pagina*/
+    .footer .secciones{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 70%;
+        color: hsl(167, 40%, 24%);
+    }
+    .footer .social{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 40%;
+        color: hsl(167, 40%, 24%);
+    }
+    .footer .secciones span, .footer .social span{
+        width: 20%;
+        font-size: 25px;
+        font-weight: 600;
+        cursor: pointer;
+    }
+}
+@media screen and (max-width:360px) {
+    /*Sección de servicios*/
+    .servicios{
+        display: flex;
+        flex-wrap: wrap;
+        min-height: 100vh;
+    }
+    .card{
+        width: 100%;
+    }
+    .card h3{
+        font-size: 1.5em;
+        font-weight: 700;
+    }
+    .card p{
+        font-size: 25px;
+    }
+    .card a{
+        font-size: 30px;
+        color:#000;
+        font-weight: 600px;
+        text-decoration: none;
+    }
+    .card-img{
+        width: 100%;
+    }
+    .card-img img{
+        width: 100%;
+        height: 100%;
+    }
+    /*Sección de productos*/
+    .productos{
+        display: flex;
+        min-height: 70vh;
+        flex-wrap: wrap;
+    }
+    .producto{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 50px 20px 5px;
+    }
+    .producto h4{
+        font-size: 2em;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .producto p{
+        font-size: 20px;
+        text-align: center;
+        width: 100%;
+    }
+    .producto:nth-child(1){
+        color:hsl(167, 40%, 24%);
+        background-image: url(../images/mobile/image-graphic-design.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .producto:nth-child(2){
+        color: hsl(198, 62%, 26%);
+        background-image: url(../images/mobile/image-photography.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    /*Sección de Clientes*/
+    .testimonios h2{
+        text-align: center;
+        width: 100%;
+        font-size: 1.5em;
+        margin-bottom: 25px;
+    }
+    .testimonio{
+        padding: 20px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:space-between;
+        height: 450px;
+        margin-bottom: 50px;
+    }
+    .testimonio p{
+        font-size: 25px;
+        width: 100%;
+        text-align: center;
+    }
+    .testimonio span{
+        font-size: 20px;
+        text-align: center;
+    }
+    /*Pie de pagina*/
+    .footer .secciones{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .footer .social{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 50%;
+    }
+    .footer .secciones span, .footer .social span{
+        width: 20%;
+        font-size: 20px;
+        font-weight: 600;
+        cursor: pointer;
+    }
+    .footer .secciones span:hover, .footer .social:hover{
+        color:#fff;
+        cursor: pointer;
+    }
+}
